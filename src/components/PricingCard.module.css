@@ -1,0 +1,42 @@
+.pricing {
+  width: 100%;
+  padding: 4rem 1rem;
+  background-color: rgba(61, 59, 219, 0.233);
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  color: #eee;
+  border: 1px solid #eee;
+  padding: 1rem 2rem;
+  margin: 0.5rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: 0.3s all linear;
+}
+
+.card:hover {
+  background-color: rgba(62, 59, 219, 0.431);
+}
+
+.bar {
+  border-bottom: 1px solid #eee;
+  width: 10%;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.card .money {
+  font-size: 2rem;
+}
+
+.card p {
+  margin: 0.5rem auto;
+}

@@ -1,0 +1,88 @@
+/* .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 100px;
+  background: url(../assets/upain.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+} */
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.container::before {
+  content: "";
+  background: url("../assets/upain.jpg") no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.title {
+  text-transform: uppercase;
+}
+.form {
+  width: 500px;
+  height: 450px;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.inputS {
+  flex: 1;
+  height: 50px;
+  padding-left: 10px;
+}
+.inputS:first-child {
+  margin-right: 5px;
+}
+.inputL {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding-left: 5px;
+}
+.textarea {
+  width: 100%;
+  padding-left: 5px;
+}
+.button {
+  margin-top: 20px;
+  border: 2px solid rgba(62, 59, 219, 0.431);
+  background-color: #fff;
+  color: rgba(62, 59, 219, 1);
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.button:hover {
+  background-color: rgba(62, 59, 219, 0.431);
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .form {
+    width: 100%;
+  }
+  .inputS:first-child {
+    margin: 0;
+  }
+}
