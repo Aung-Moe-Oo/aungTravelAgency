@@ -12,7 +12,7 @@ const Video = () => {
         <h1>AUNG. TRAVEL.</h1>
         <p>Myanmar Travel Agency</p>
         <div className={classes.btn}>
-          <Link to="/" className="btn">
+          <Link to="/pricing" className="btn">
             Pricing
           </Link>
           <Link to="/contact" className="btn btn-light">
